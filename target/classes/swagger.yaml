@@ -1,0 +1,540 @@
+swagger: "2.0"
+info:
+  description: "当前项目提供了获取个人信息页面需要的所有数据的多个API函数以及对应的接口(重点关注参数和返回值)"
+  version: "1.0.0"
+  title: "Web开发与实践"
+  # termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "gatesma@foxmail.com"
+    url: "http://gatesma.cn"
+# host: "gatesma.cn"
+tags:
+  - name: "account"
+    description: "用户名密码相关"
+  - name: "page"
+    description: "个人主页相关信息"
+  - name: "personal"
+    description: "个人信息接口"
+  - name: "resource"
+    description: "资源接口（图片等）"
+  - name: "other"
+    description: "其他信息"
+
+
+schemes:
+  - "http"
+paths:
+  /account/login:
+    post:
+      tags:
+        - "account"
+      summary: "用户名密码校验"
+      description: "用户名密码校验接口"
+      operationId: "login"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "用户登陆login信息"
+          required: true
+          schema:
+            $ref: '#/definitions/LoginRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/LoginRet'
+        400:
+          description: Invalid RequestBody supplied
+        404:
+          description: RequestBody not found
+
+  /page/get_name:
+    get:
+      tags:
+        - "page"
+      summary: "获取个人主页名称"
+      description: "获取个人主页名称接口"
+      operationId: "pagenameget"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/PageNameGetRet'
+        400:
+          description: Invalid RequestBody supplied
+        404:
+          description: RequestBody not found
+
+  /page/set_name:
+    post:
+      tags:
+        - "page"
+      summary: "设置个人主页名称"
+      description: "设置个人主页名称接口"
+      operationId: "pagenameset"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "个人主页名称"
+          required: true
+          schema:
+            $ref: '#/definitions/PageNameSetRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/PageNameSetRet'
+
+  /personal/get_basicProfile:
+    get:
+      tags:
+        - "personal"
+      summary: "获取最基本的个人信息"
+      description: "名字、生日、邮箱、电话、FREELANCE"
+      operationId: "basicprofileget"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/BasicProfileGetRet'
+
+  /personal/set_basicProfile:
+    post:
+      tags:
+        - "personal"
+      summary: "设置最基本的个人信息"
+      description: "名字、生日、邮箱、电话、FREELANCE"
+      operationId: "basicprofileset"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          required: true
+          schema:
+            $ref: '#/definitions/BasicProfileSetRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/BasicProfileSetRet'
+
+  /personal/get_scorelist:
+    get:
+      tags:
+        - "personal"
+      summary: "成绩列表"
+      description: "成绩列表"
+      operationId: "scorelistget"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ScoreListGetRet'
+
+  /personal/set_scorelist:
+    post:
+      tags:
+        - "personal"
+      summary: "设置个人成绩"
+      description: "设置个人成绩接口"
+      operationId: "scorelistset"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          required: true
+          schema:
+            $ref: '#/definitions/ScoreListSetRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ScoreListSetRet'
+
+  /personal/get_projectlist:
+    get:
+      tags:
+        - "personal"
+      summary: "个人经历项目列表"
+      description: "个人经历项目列表"
+      operationId: "projectlistget"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ProjectListGetRet'
+
+  /personal/set_projectlist:
+    post:
+      tags:
+        - "personal"
+      summary: "设置个人经历项目"
+      description: "设置个人经历项目接口"
+      operationId: "projectlistset"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          required: true
+          schema:
+            $ref: '#/definitions/ProjectListSetRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ProjectListSetRet'
+
+  /resource/get_avatar:
+    get:
+      tags:
+        - "resource"
+      summary: "获取首页头像"
+      description: "获取首页头像"
+      operationId: "avatarget"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/AvatarGetRet'
+
+  /resource/set_avatar:
+    post:
+      tags:
+        - "resource"
+      summary: "设置首页头像"
+      description: "设置首页头像接口"
+      operationId: "avatarset"
+      consumes:
+        - multipart/form-data
+      produces:
+        - "application/json"
+      parameters:
+        - name: file
+          in: formData
+          type: file
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/AvatarSetRet'
+
+  /other/get_contactlist:
+    get:
+      tags:
+        - "other"
+      summary: "社交媒体联系列表"
+      description: "社交媒体联系列表"
+      operationId: "contactlistget"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ContactListGetRet'
+
+  /other/set_contactlist:
+    post:
+      tags:
+        - "other"
+      summary: "设置社交媒体联系"
+      description: "设置社交媒体联系接口"
+      operationId: "contactlistset"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          required: true
+          schema:
+            $ref: '#/definitions/ContactSetRequest'
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ContactListSetRet'
+
+definitions:
+  ReturnCode:
+    type: object
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        example: 0
+      message:
+        type: string
+        example: OK
+
+  # Request
+  LoginRequest:
+    required:
+      - username
+      - password
+    properties:
+      username:
+        type: string
+        description: "用户名"
+        example: "Jerry"
+      password:
+        type: string
+        example: "123456"
+        description: "密码"
+  PageNameSetRequest:
+    required:
+      - name
+    properties:
+      name:
+        type: string
+        description: "个人主页名称"
+  BasicProfileSetRequest:
+    properties:
+      name:
+        type: string
+        description: "个人名字"
+      born_time:
+        type: string
+        description: "出生时间，格式：yyyy-MM-dd HH:mm:ss"
+      email:
+        type: string
+        description: "邮箱"
+      phone:
+        type: string
+        description: "电话"
+      freelance:
+        type: string
+        description: "现在是否自由"
+  ScoreListSetRequest:
+    required:
+      - list
+    properties:
+      list:
+        type: array
+        items:
+          $ref: '#/definitions/score'
+  ProjectListSetRequest:
+    required:
+      - list
+    properties:
+      list:
+        type: array
+        items:
+          $ref: '#/definitions/project'
+  ContactSetRequest:
+    required:
+      - list
+    properties:
+      list:
+        type: array
+        items:
+          $ref: '#/definitions/contactItem'
+
+  # Model
+  score:
+    properties:
+      name:
+        type: string
+        description: "科目名称"
+      score:
+        type: integer
+        minimum: 0
+        maximum: 100
+        example: 90
+        description: "成绩"
+  project:
+    properties:
+      name:
+        type: string
+        description: "项目名称"
+      time:
+        type: string
+        description: "项目时间"
+      content:
+        type: string
+        description: "项目内容"
+  contactItem:
+    properties:
+      name:
+        type: string
+        description: "社交媒体名称"
+      content:
+        type: string
+        description: "链接"
+  # Data
+  LoginData:
+    properties:
+      result:
+        type: string
+        description: "登陆结果"
+        example: "用户名或密码不正确"
+  PageNameGetData:
+    properties:
+      name:
+        type: string
+        description: "个人主页名称"
+        example: "马龙个人介绍"
+  PageNameSetData:
+    properties:
+      result:
+        type: string
+        description: "设置结果"
+        example: "设置成功"
+  BasicProfileGetData:
+    properties:
+      name:
+        type: string
+        description: "个人名字"
+      born_time:
+        type: string
+        description: "出生时间，格式：yyyy-MM-dd HH:mm:ss"
+      email:
+        type: string
+        description: "邮箱"
+      phone:
+        type: string
+        description: "电话"
+      freelance:
+        type: string
+        description: "现在是否自由"
+  ScoreListGetData:
+    properties:
+      list:
+        type: array
+        items:
+          $ref: '#/definitions/score'
+  ProjectListGetData:
+    properties:
+      list:
+        type: array
+        items:
+          $ref: '#/definitions/project'
+  AvatarGetData:
+    properties:
+      avatarid:
+        type: string
+        description: "头像对应图片的名称"
+      avatarsuffix:
+        type: string
+        description: "后缀名"
+  ContactListGetData:
+    properties:
+      list:
+        type: array
+        items:
+          $ref: '#/definitions/contactItem'
+
+
+  # Ret
+  LoginRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+      - properties:
+          data:
+            $ref: '#/definitions/LoginData'
+  PageNameGetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+      - properties:
+          data:
+            $ref: '#/definitions/PageNameGetData'
+  PageNameSetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+      - properties:
+          data:
+            $ref: '#/definitions/PageNameSetData'
+  BasicProfileGetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+      - properties:
+          data:
+            $ref: '#/definitions/BasicProfileGetData'
+  ScoreListGetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+      - properties:
+          data:
+            $ref: '#/definitions/ScoreListGetData'
+  ProjectListGetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+      - properties:
+          data:
+            $ref: '#/definitions/ProjectListGetData'
+  ScoreListSetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+  ContactListGetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+      - properties:
+          data:
+            $ref: '#/definitions/ContactListGetData'
+  BasicProfileSetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+  ProjectListSetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+  AvatarGetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+      - properties:
+          data:
+            $ref: '#/definitions/AvatarGetData'
+  AvatarSetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+  ContactListSetRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+
+
+
+
+
+

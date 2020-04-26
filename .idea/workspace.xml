@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81936463-bec4-4d4f-ae4e-d47cc0880e97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Other.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Personal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/util/EntityUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/util/SpringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/RFC3339DateFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/Swagger2SpringBoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/AccountApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/AccountApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/ApiOriginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/ApiResponseMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/OtherApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/OtherApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/PageApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/PageApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/PersonalApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/PersonalApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/configuration/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/configuration/SwaggerDocumentationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ApiReturnCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/AvatarGetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/AvatarGetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/AvatarSetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/BasicProfileGetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/BasicProfileGetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/BasicProfileSetRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/BasicProfileSetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ContactItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ContactListGetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ContactListGetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ContactListSetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ContactSetRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/LoginData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/LoginRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/PageNameGetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/PageNameGetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/PageNameSetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/PageNameSetRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/PageNameSetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ProjectListGetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ProjectListGetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ProjectListSetRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ProjectListSetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ReturnCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ScoreListGetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ScoreListGetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ScoreListSetRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ScoreListSetRet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gatesma/webex/AccountApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gatesma/webex/OtherApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gatesma/webex/PageApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gatesma/webex/PersonalApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/BootApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/RFC3339DateFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/Swagger2SpringBoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/AccountApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/AccountApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/ApiException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/ApiOriginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/ApiResponseMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/OtherApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/OtherApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/PageApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/PageApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/PersonalApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/PersonalApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/ResourceApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/ResourceApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/configuration/CustomInstantDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/configuration/CustomInstantDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/configuration/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/configuration/JacksonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/configuration/JacksonConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/configuration/SwaggerDocumentationConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/AvatarGetData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/AvatarGetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/AvatarSetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/BasicProfileGetData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/BasicProfileGetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/BasicProfileSetRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/BasicProfileSetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ContactItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ContactListGetData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ContactListGetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ContactListSetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ContactSetRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/LoginData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/LoginRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/PageNameGetData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/PageNameGetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/PageNameSetData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/PageNameSetRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/PageNameSetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/Project.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ProjectListGetData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ProjectListGetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ProjectListSetRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ProjectListSetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ReturnCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ScoreListGetData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ScoreListGetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ScoreListSetRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ScoreListSetRet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gatesma/webex/BootApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swagger.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="203" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="mavenHome" value="$USER_HOME$/Library/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="$USER_HOME$/Library/maven/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1b14KNs7SXlsH56RAoqCKN6QL5G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.WebexApplication">
+    <configuration name="AccountApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Webex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gatesma.webex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gatesma.webex" />
+      <option name="MAIN_CLASS_NAME" value="com.gatesma.webex.AccountApiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OtherApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Webex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gatesma.webex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gatesma.webex" />
+      <option name="MAIN_CLASS_NAME" value="com.gatesma.webex.OtherApiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Webex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gatesma.webex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gatesma.webex" />
+      <option name="MAIN_CLASS_NAME" value="com.gatesma.webex.PageApiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonalApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Webex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gatesma.webex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gatesma.webex" />
+      <option name="MAIN_CLASS_NAME" value="com.gatesma.webex.PersonalApiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonalApiTest.setProfile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Webex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gatesma.webex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gatesma.webex" />
+      <option name="MAIN_CLASS_NAME" value="com.gatesma.webex.PersonalApiTest" />
+      <option name="METHOD_NAME" value="setProfile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebexApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Webex" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gatesma.webex.WebexApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OtherApiTest" />
+        <item itemvalue="JUnit.PersonalApiTest" />
+        <item itemvalue="JUnit.PageApiTest" />
+        <item itemvalue="JUnit.AccountApiTest" />
+        <item itemvalue="JUnit.PersonalApiTest.setProfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81936463-bec4-4d4f-ae4e-d47cc0880e97" name="Default Changelist" comment="" />
+      <created>1587786200957</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587786200957</updated>
+      <workItem from="1587786203834" duration="21766000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1587814310607">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.800@0.23.1440.800" timestamp="1587814310607" />
+    <state x="533" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1587813919157">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="145" key="#com.intellij.ide.util.MemberChooser/-1116.0.1116.756/0.0.1440.900@0.0.1440.900" timestamp="1587800553227" />
+    <state x="533" y="145" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1587813919157" />
+    <state x="483" y="163" key="#xdebugger.evaluate" timestamp="1587807301445">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="483" y="163" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1587807301445" />
+    <state width="549" height="466" key="DebuggerActiveHint" timestamp="1587815050336">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="549" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1587815050336" />
+    <state width="1398" height="487" key="GridCell.Tab.0.bottom" timestamp="1587819404796">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="511" key="GridCell.Tab.0.bottom/-1116.0.1116.756/0.0.1440.900@0.0.1440.900" timestamp="1587799562909" />
+    <state width="1398" height="487" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587819404796" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1587807133378" />
+    <state width="1398" height="487" key="GridCell.Tab.0.center" timestamp="1587819404795">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="511" key="GridCell.Tab.0.center/-1116.0.1116.756/0.0.1440.900@0.0.1440.900" timestamp="1587799562907" />
+    <state width="1398" height="487" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587819404795" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1587807133377" />
+    <state width="1398" height="487" key="GridCell.Tab.0.left" timestamp="1587819404794">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="511" key="GridCell.Tab.0.left/-1116.0.1116.756/0.0.1440.900@0.0.1440.900" timestamp="1587799562906" />
+    <state width="1398" height="487" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587819404794" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1587807133376" />
+    <state width="1398" height="487" key="GridCell.Tab.0.right" timestamp="1587819404796">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="511" key="GridCell.Tab.0.right/-1116.0.1116.756/0.0.1440.900@0.0.1440.900" timestamp="1587799562908" />
+    <state width="1398" height="487" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587819404796" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1587807133377" />
+    <state width="1398" height="487" key="GridCell.Tab.1.bottom" timestamp="1587819404798">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="511" key="GridCell.Tab.1.bottom/-1116.0.1116.756/0.0.1440.900@0.0.1440.900" timestamp="1587799562914" />
+    <state width="1398" height="487" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587819404798" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.23.1440.800@0.23.1440.800" timestamp="1587807222026" />
+    <state width="1398" height="487" key="GridCell.Tab.1.center" timestamp="1587819404797">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="511" key="GridCell.Tab.1.center/-1116.0.1116.756/0.0.1440.900@0.0.1440.900" timestamp="1587799562911" />
+    <state width="1398" height="487" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1587819404797" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.23.1440.800@0.23.1440.800" timestamp="1587807222024" />
+    <state width="1398" height="487" key="GridCell.Tab.1.left" timestamp="1587819404797">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="511" key="GridCell.Tab.1.left/-1116.0.1116.756/0.0.1440.900@0.0.1440.900" timestamp="1587799562910" />
+    <state width="1398" height="487" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1587819404797" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.23.1440.800@0.23.1440.800" timestamp="1587807222024" />
+    <state width="1398" height="487" key="GridCell.Tab.1.right" timestamp="1587819404798">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="511" key="GridCell.Tab.1.right/-1116.0.1116.756/0.0.1440.900@0.0.1440.900" timestamp="1587799562912" />
+    <state width="1398" height="487" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1587819404798" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.23.1440.800@0.23.1440.800" timestamp="1587807222025" />
+    <state width="1398" height="303" key="GridCell.Tab.2.bottom" timestamp="1587814935593">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587814935593" />
+    <state width="1398" height="303" key="GridCell.Tab.2.bottom/0.23.1440.800@0.23.1440.800" timestamp="1587807133294" />
+    <state width="1398" height="303" key="GridCell.Tab.2.center" timestamp="1587814935593">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1587814935593" />
+    <state width="1398" height="303" key="GridCell.Tab.2.center/0.23.1440.800@0.23.1440.800" timestamp="1587807133293" />
+    <state width="1398" height="303" key="GridCell.Tab.2.left" timestamp="1587814935592">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1587814935592" />
+    <state width="1398" height="303" key="GridCell.Tab.2.left/0.23.1440.800@0.23.1440.800" timestamp="1587807133292" />
+    <state width="1398" height="303" key="GridCell.Tab.2.right" timestamp="1587814935593">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1587814935593" />
+    <state width="1398" height="303" key="GridCell.Tab.2.right/0.23.1440.800@0.23.1440.800" timestamp="1587807133293" />
+    <state x="267" y="194" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1587809955173">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="267" y="194" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1587809955173" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/webex$PageApiTest.ic" NAME="PageApiTest Coverage Results" MODIFIED="1587816592515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.gatesma.webex.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/webex$AccountApiTest.ic" NAME="AccountApiTest Coverage Results" MODIFIED="1587813313190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.gatesma.webex.*</FILTER>
+    </SUITE>
+  </component>
+</project>

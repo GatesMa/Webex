@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <!-- 包扫描 -->
+    <context:component-scan base-package="com.gatesma.webex"></context:component-scan>
+    <!-- 开启基于注解版的切面功能 -->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+
+    <!-- 个人网站的页面信息配置： -->
+    <bean id="page" class="com.gatesma.webex.entities.Page">
+        <property name="name" value="马龙的个人主页"></property>
+    </bean>
+
+
+
+    <!-- 配置实体 -->
+
+    <!-- *************** 1. 利用setter属性值注入 *************** -->
+    <bean id="admin" class="com.gatesma.webex.entities.Admin">
+        <property name="name" value="超级管理root"></property>
+        <property name="age" value="45"></property>
+        <property name="gender" value="male"></property>
+    </bean>
+
+    <!-- *************** 2. 利用构造器属性值注入 *************** -->
+    <bean id="student" class="com.gatesma.webex.entities.Student">
+        <constructor-arg value="2017141461189" index="0"></constructor-arg>
+        <constructor-arg value="马龙" index="1"></constructor-arg>
+        <constructor-arg value="计算机学院" index="2"></constructor-arg>
+        <constructor-arg value="男" index="3"></constructor-arg>
+        <constructor-arg value="19" index="4"></constructor-arg>
+    </bean>
+
+    <!-- *************** 3. 利用注解注入（详情请查看'Teacher'实体类） *************** -->
+
+
+
+
+
+</beans>
