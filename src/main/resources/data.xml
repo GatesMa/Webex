@@ -15,7 +15,7 @@
     <!-- 账号信息配置： -->
     <bean id="account" class="com.gatesma.webex.entities.Account">
         <property name="loginName" value="gatesma"></property>
-        <property name="password" value="123456"></property>
+        <property name="password" value="123"></property>
     </bean>
 
     <!-- 个人属性信息配置： -->

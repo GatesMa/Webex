@@ -11,6 +11,7 @@ import io.swagger.model.PageNameSetRet;
 import io.swagger.annotations.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -24,6 +25,7 @@ import java.util.List;
 @RequestMapping(value = "")
 public interface PageApi {
 
+    @PreAuthorize("hasRole('page')")
     @ApiOperation(value = "获取个人主页名称", nickname = "pagenameget", notes = "获取个人主页名称接口", response = PageNameGetRet.class, tags={ "page", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = PageNameGetRet.class),
