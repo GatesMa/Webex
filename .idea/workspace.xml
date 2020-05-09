@@ -1,134 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81936463-bec4-4d4f-ae4e-d47cc0880e97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Other.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Personal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/entities/Score.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/util/EntityUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/util/SpringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/RFC3339DateFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/Swagger2SpringBoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/AccountApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/AccountApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/ApiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/ApiOriginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/ApiResponseMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/OtherApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/OtherApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/PageApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/PageApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/PersonalApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/PersonalApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/configuration/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/configuration/SwaggerDocumentationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ApiReturnCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/AvatarGetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/AvatarGetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/AvatarSetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/BasicProfileGetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/BasicProfileGetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/BasicProfileSetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/BasicProfileSetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ContactItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ContactListGetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ContactListGetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ContactListSetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ContactSetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/LoginData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/LoginRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/PageNameGetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/PageNameGetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/PageNameSetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/PageNameSetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/PageNameSetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ProjectListGetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ProjectListGetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ProjectListSetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ProjectListSetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ReturnCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/Score.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ScoreListGetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ScoreListGetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ScoreListSetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ScoreListSetRet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gatesma/webex/AccountApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gatesma/webex/OtherApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gatesma/webex/PageApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gatesma/webex/PersonalApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/BootApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/RFC3339DateFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/Swagger2SpringBoot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/AccountApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/AccountApiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/ApiResponseMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/OtherApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/OtherApiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/PageApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/PageApiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/PersonalApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/PersonalApiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/ResourceApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/api/ResourceApiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/configuration/CustomInstantDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/configuration/CustomInstantDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/configuration/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/configuration/JacksonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/configuration/JacksonConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/configuration/SwaggerDocumentationConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/AvatarGetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/AvatarGetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/AvatarSetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/BasicProfileGetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/BasicProfileGetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/BasicProfileSetRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/BasicProfileSetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ContactItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ContactListGetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ContactListGetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ContactListSetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ContactSetRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/LoginData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/LoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/LoginRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/PageNameGetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/PageNameGetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/PageNameSetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/PageNameSetRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/PageNameSetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/Project.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ProjectListGetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ProjectListGetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ProjectListSetRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ProjectListSetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ReturnCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/Score.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ScoreListGetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ScoreListGetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ScoreListSetRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/swagger/model/ScoreListSetRet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/swagger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gatesma/webex/BootApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gatesma/webex/entities/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swagger.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="81936463-bec4-4d4f-ae4e-d47cc0880e97" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -298,6 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587786200957</updated>
       <workItem from="1587786203834" duration="21766000" />
+      <workItem from="1589022480253" duration="694000" />
     </task>
     <servers />
   </component>
