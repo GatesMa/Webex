@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81936463-bec4-4d4f-ae4e-d47cc0880e97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587786200957</updated>
       <workItem from="1587786203834" duration="21766000" />
-      <workItem from="1589022480253" duration="975000" />
+      <workItem from="1589022480253" duration="1863000" />
     </task>
     <servers />
   </component>
