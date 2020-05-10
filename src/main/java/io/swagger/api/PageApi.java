@@ -38,7 +38,7 @@ public interface PageApi {
         method = RequestMethod.GET)
     ResponseEntity<PageNameGetRet> pagenameget();
 
-
+    @CrossOrigin
     @ApiOperation(value = "设置个人主页名称", nickname = "pagenameset", notes = "设置个人主页名称接口", response = PageNameSetRet.class, tags={ "page", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = PageNameSetRet.class) })

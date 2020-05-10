@@ -43,7 +43,7 @@ public interface PersonalApi {
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-
+    @CrossOrigin
     @ApiOperation(value = "设置最基本的个人信息", nickname = "basicprofileset", notes = "名字、生日、邮箱、电话、FREELANCE", response = BasicProfileSetRet.class, tags={ "personal", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = BasicProfileSetRet.class) })
@@ -66,7 +66,7 @@ public interface PersonalApi {
         method = RequestMethod.GET)
     ResponseEntity<ProjectListGetRet> projectlistget();
 
-
+    @CrossOrigin
     @ApiOperation(value = "设置个人经历项目", nickname = "projectlistset", notes = "设置个人经历项目接口", response = ProjectListSetRet.class, tags={ "personal", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = ProjectListSetRet.class) })
@@ -91,7 +91,7 @@ public interface PersonalApi {
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-
+    @CrossOrigin
     @ApiOperation(value = "设置个人成绩", nickname = "scorelistset", notes = "设置个人成绩接口", response = ScoreListSetRet.class, tags={ "personal", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = ScoreListSetRet.class) })
