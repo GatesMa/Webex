@@ -31,18 +31,19 @@ import javax.annotation.Resource;
 @EnableAuthorizationServer
 public class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
 
-    // 该对象用来支持 password 模式
-    @Resource(name="authenticationManagerBean")
-    private AuthenticationManager authenticationManager;
+    private static String REALM="MY_OAUTH_REALM";
 
     @Autowired
     private TokenStore tokenStore;
 
-
-    private static String REALM="MY_OAUTH_REALM";
-
     @Autowired
     private UserApprovalHandler userApprovalHandler;
+
+    // 该对象用来支持 password 模式
+    @Autowired
+    @Qualifier("authenticationManagerBean")
+    private AuthenticationManager authenticationManager;
+    
 
     // 配置 password 授权模式
     @Override
@@ -51,8 +52,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
         clients.inMemory()
                 .withClient("password")
                 .secret("123") //123加密后的密码
-                .authorizedGrantTypes("password", "refresh_token") //授权模式为password和refresh_token两种
-                .authorities("ROLE_CLIENT", "ROLE_TRUSTED_CLIENT")
+                .authorizedGrantTypes("password") //授权模式为password和refresh_token两种
                 .refreshTokenValiditySeconds(600)
                 .accessTokenValiditySeconds(1800) // 配置access_token的过期时间
                 .resourceIds("rid") //配置资源id
@@ -67,11 +67,6 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
                 .authenticationManager(authenticationManager);
     }
 
-//    @Override
-//    public void configure(AuthorizationServerSecurityConfigurer security) {
-//        // 表示支持 client_id 和 client_secret 做登录认证
-//        security.allowFormAuthenticationForClients();
-//    }
 
     @Override
     public void configure(AuthorizationServerSecurityConfigurer oauthServer) throws Exception {
