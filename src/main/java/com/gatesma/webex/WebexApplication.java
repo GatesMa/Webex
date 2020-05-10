@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
-@ComponentScan(basePackages = { "com.gatesma.webex","io.swagger"})
+@ComponentScan(basePackages = { "com.gatesma.webex","io.swagger","com.gatesma.webex.security"})
 @ImportResource({"classpath:applicationContext.xml", "classpath:data.xml"})
 public class WebexApplication {
 

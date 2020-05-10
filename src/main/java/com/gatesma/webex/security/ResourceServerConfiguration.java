@@ -19,22 +19,40 @@ import org.springframework.security.oauth2.provider.error.OAuth2AccessDeniedHand
 @EnableResourceServer
 public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
 
-    private static final String RESOURCE_ID = "password";
+    private static final String RESOURCE_ID = "my_rest_api";
 
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) {
         resources.resourceId(RESOURCE_ID).stateless(false);
     }
 
-    // 配置 URL 访问权限
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.anonymous().disable().authorizeRequests()
-            .antMatchers("/account/**").hasRole("account")
-            .antMatchers("/page/**").hasRole("page")
-            .antMatchers("/personal/**").hasRole("personal")
-            .antMatchers("/resource/**").hasRole("resource")
-            .antMatchers("/other/**").hasRole("other")
-            .anyRequest().authenticated();
+        http.
+            anonymous().disable()
+            .requestMatchers().antMatchers("/account*/**")
+            .and()
+                .authorizeRequests()
+            .antMatchers("/account*/**").permitAll()
+            .and().exceptionHandling().accessDeniedHandler(new OAuth2AccessDeniedHandler());
     }
+
+//    private static final String RESOURCE_ID = "password";
+//
+//    @Override
+//    public void configure(ResourceServerSecurityConfigurer resources) {
+//        resources.resourceId(RESOURCE_ID).stateless(false);
+//    }
+//
+//    // 配置 URL 访问权限
+//    @Override
+//    public void configure(HttpSecurity http) throws Exception {
+//        http.anonymous().disable().authorizeRequests()
+//            .antMatchers("/account/**").hasRole("account")
+//            .antMatchers("/page/**").hasRole("page")
+//            .antMatchers("/personal/**").hasRole("personal")
+//            .antMatchers("/resource/**").hasRole("resource")
+//            .antMatchers("/other/**").hasRole("other")
+//            .anyRequest().authenticated();
+//    }
 }

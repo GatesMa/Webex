@@ -41,7 +41,6 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
 
     // 该对象用来支持 password 模式
     @Autowired
-    @Qualifier("authenticationManagerBean")
     private AuthenticationManager authenticationManager;
 
     // 配置 password 授权模式
@@ -50,10 +49,11 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
 
         clients.inMemory()
                 .withClient("my-trusted-client")//客户端ID
-                .authorizedGrantTypes("password", "authorization_code", "refresh_token", "implicit")
+                .authorizedGrantTypes("password", "refresh_token")
                 .authorities("ROLE_CLIENT", "ROLE_TRUSTED_CLIENT")
                 .scopes("read", "write", "trust")//授权用户的操作权限
                 .secret("123")//密码
+                .resourceIds("my_rest_api")
                 .accessTokenValiditySeconds(600).//token有效期为120秒
                 refreshTokenValiditySeconds(300);//刷新token有效期为600秒
     }
