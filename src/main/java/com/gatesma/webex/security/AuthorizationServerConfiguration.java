@@ -43,30 +43,26 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Autowired
     @Qualifier("authenticationManagerBean")
     private AuthenticationManager authenticationManager;
-    
 
     // 配置 password 授权模式
     @Override
-    public void configure(ClientDetailsServiceConfigurer clients)
-            throws Exception {
+    public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
+
         clients.inMemory()
-                .withClient("password")
-                .secret("123") //123加密后的密码
-                .authorizedGrantTypes("password") //授权模式为password和refresh_token两种
-                .refreshTokenValiditySeconds(600)
-                .accessTokenValiditySeconds(1800) // 配置access_token的过期时间
-                .resourceIds("rid") //配置资源id
-                .scopes("all");
-
+                .withClient("my-trusted-client")//客户端ID
+                .authorizedGrantTypes("password", "authorization_code", "refresh_token", "implicit")
+                .authorities("ROLE_CLIENT", "ROLE_TRUSTED_CLIENT")
+                .scopes("read", "write", "trust")//授权用户的操作权限
+                .secret("123")//密码
+                .accessTokenValiditySeconds(600).//token有效期为120秒
+                refreshTokenValiditySeconds(300);//刷新token有效期为600秒
     }
-
 
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         endpoints.tokenStore(tokenStore).userApprovalHandler(userApprovalHandler)
                 .authenticationManager(authenticationManager);
     }
-
 
     @Override
     public void configure(AuthorizationServerSecurityConfigurer oauthServer) throws Exception {

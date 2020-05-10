@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="81936463-bec4-4d4f-ae4e-d47cc0880e97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/security/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/security/AuthorizationServerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/security/ResourceServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gatesma/webex/security/ResourceServerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gatesma/webex/security/AuthorizationServerConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gatesma/webex/security/AuthorizationServerConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gatesma/webex/security/ResourceServerConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gatesma/webex/security/ResourceServerConfiguration.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +175,7 @@
       <updated>1587786200957</updated>
       <workItem from="1587786203834" duration="21766000" />
       <workItem from="1589022480253" duration="10379000" />
-      <workItem from="1589079650247" duration="2427000" />
+      <workItem from="1589079650247" duration="2759000" />
     </task>
     <servers />
   </component>
