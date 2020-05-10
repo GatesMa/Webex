@@ -26,6 +26,7 @@ import java.util.List;
 public interface PageApi {
 
     @PreAuthorize("hasRole('page')")
+    @CrossOrigin
     @ApiOperation(value = "获取个人主页名称", nickname = "pagenameget", notes = "获取个人主页名称接口", response = PageNameGetRet.class, tags={ "page", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = PageNameGetRet.class),

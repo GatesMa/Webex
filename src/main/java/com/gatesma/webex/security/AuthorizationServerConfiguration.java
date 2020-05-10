@@ -53,9 +53,9 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
                 .authorities("ROLE_CLIENT", "ROLE_TRUSTED_CLIENT")
                 .scopes("read", "write", "trust")//授权用户的操作权限
                 .secret("123")//密码
-                .resourceIds("my_rest_api")
-                .accessTokenValiditySeconds(600).//token有效期为120秒
-                refreshTokenValiditySeconds(300);//刷新token有效期为600秒
+                .resourceIds("my_rest_api");
+//                .accessTokenValiditySeconds(600).//token有效期为120秒
+//                refreshTokenValiditySeconds(300);//刷新token有效期为600秒
     }
 
     @Override

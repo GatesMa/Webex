@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.gatesma.webex.AccountApiTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.587 sec - in com.gatesma.webex.AccountApiTest

@@ -18,13 +18,7 @@ import io.swagger.annotations.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
@@ -36,6 +30,7 @@ import java.util.List;
 @RequestMapping(value = "")
 public interface PersonalApi {
 
+    @CrossOrigin
     @ApiOperation(value = "获取最基本的个人信息", nickname = "basicprofileget", notes = "名字、生日、邮箱、电话、FREELANCE", response = BasicProfileGetRet.class, tags={ "personal", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = BasicProfileGetRet.class) })
@@ -61,7 +56,7 @@ public interface PersonalApi {
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-
+    @CrossOrigin
     @ApiOperation(value = "个人经历项目列表", nickname = "projectlistget", notes = "个人经历项目列表", response = ProjectListGetRet.class, tags={ "personal", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = ProjectListGetRet.class) })
@@ -83,7 +78,7 @@ public interface PersonalApi {
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-
+    @CrossOrigin
     @ApiOperation(value = "成绩列表", nickname = "scorelistget", notes = "成绩列表", response = ScoreListGetRet.class, tags={ "personal", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = ScoreListGetRet.class) })
